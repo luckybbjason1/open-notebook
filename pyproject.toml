@@ -62,6 +62,7 @@ dev = [
     "ruff>=0.5.5",
     "mypy>=1.11.1",
     "types-requests>=2.32.0.20241016",
+    "types-PyYAML>=6.0.12.20240917",
     "ipywidgets>=8.1.5",
 ]
 

@@ -2295,6 +2295,7 @@ dev = [
     { name = "ipywidgets" },
     { name = "mypy" },
     { name = "ruff" },
+    { name = "types-pyyaml" },
     { name = "types-requests" },
 ]
 
@@ -2339,6 +2340,7 @@ requires-dist = [
     { name = "streamlit-tags", specifier = ">=1.2.8" },
     { name = "tiktoken", specifier = ">=0.8.0" },
     { name = "tomli", specifier = ">=2.0.2" },
+    { name = "types-pyyaml", marker = "extra == 'dev'", specifier = ">=6.0.12.20240917" },
     { name = "types-requests", marker = "extra == 'dev'", specifier = ">=2.32.0.20241016" },
     { name = "watchdog", specifier = ">=5.0.3" },
     { name = "youtube-transcript-api", specifier = ">=0.6.2" },

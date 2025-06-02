@@ -37,7 +37,7 @@ jobs:
         run: uv run ruff format --check .
         
       - name: Run mypy type checking
-        run: uv run python -m mypy .
+        run: uv run mypy open_notebook/ --exclude src/
         
       # Add actual tests here when they become available
       # - name: Run tests

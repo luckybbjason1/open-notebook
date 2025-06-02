@@ -1,0 +1,15 @@
+﻿2025-06-02T13:39:38.3946031Z ##[group]Run uv run ruff check .
+2025-06-02T13:39:38.3946338Z [36;1muv run ruff check .[0m
+2025-06-02T13:39:38.3999667Z shell: /usr/bin/bash -e {0}
+2025-06-02T13:39:38.3999889Z env:
+2025-06-02T13:39:38.4000336Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.10/x64
+2025-06-02T13:39:38.4000751Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.10/x64/lib/pkgconfig
+2025-06-02T13:39:38.4001130Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.10/x64
+2025-06-02T13:39:38.4001483Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.10/x64
+2025-06-02T13:39:38.4001811Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.10/x64
+2025-06-02T13:39:38.4002147Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.10/x64/lib
+2025-06-02T13:39:38.4002472Z   UV_CACHE_DIR: /home/runner/work/_temp/setup-uv-cache
+2025-06-02T13:39:38.4002734Z ##[endgroup]
+2025-06-02T13:39:38.5040234Z error: Failed to spawn: `ruff`
+2025-06-02T13:39:38.5040788Z   Caused by: No such file or directory (os error 2)
+2025-06-02T13:39:38.5067391Z ##[error]Process completed with exit code 2.

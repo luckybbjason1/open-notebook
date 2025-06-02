@@ -1,0 +1,48 @@
+﻿2025-06-02T13:39:30.9644153Z Current runner version: '2.324.0'
+2025-06-02T13:39:30.9680024Z ##[group]Operating System
+2025-06-02T13:39:30.9681229Z Ubuntu
+2025-06-02T13:39:30.9681987Z 24.04.2
+2025-06-02T13:39:30.9682667Z LTS
+2025-06-02T13:39:30.9683514Z ##[endgroup]
+2025-06-02T13:39:30.9684316Z ##[group]Runner Image
+2025-06-02T13:39:30.9685274Z Image: ubuntu-24.04
+2025-06-02T13:39:30.9686494Z Version: 20250527.1.0
+2025-06-02T13:39:30.9688217Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20250527.1/images/ubuntu/Ubuntu2404-Readme.md
+2025-06-02T13:39:30.9690620Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250527.1
+2025-06-02T13:39:30.9692297Z ##[endgroup]
+2025-06-02T13:39:30.9693256Z ##[group]Runner Image Provisioner
+2025-06-02T13:39:30.9694335Z 2.0.437.1
+2025-06-02T13:39:30.9695099Z ##[endgroup]
+2025-06-02T13:39:30.9699669Z ##[group]GITHUB_TOKEN Permissions
+2025-06-02T13:39:30.9702753Z Actions: write
+2025-06-02T13:39:30.9703651Z Attestations: write
+2025-06-02T13:39:30.9704830Z Checks: write
+2025-06-02T13:39:30.9705625Z Contents: write
+2025-06-02T13:39:30.9706782Z Deployments: write
+2025-06-02T13:39:30.9707676Z Discussions: write
+2025-06-02T13:39:30.9708479Z Issues: write
+2025-06-02T13:39:30.9709393Z Metadata: read
+2025-06-02T13:39:30.9710179Z Models: read
+2025-06-02T13:39:30.9711027Z Packages: write
+2025-06-02T13:39:30.9711911Z Pages: write
+2025-06-02T13:39:30.9712786Z PullRequests: write
+2025-06-02T13:39:30.9713609Z RepositoryProjects: write
+2025-06-02T13:39:30.9714650Z SecurityEvents: write
+2025-06-02T13:39:30.9715457Z Statuses: write
+2025-06-02T13:39:30.9716455Z ##[endgroup]
+2025-06-02T13:39:30.9719351Z Secret source: Actions
+2025-06-02T13:39:30.9720687Z Prepare workflow directory
+2025-06-02T13:39:31.0197270Z Prepare all required actions
+2025-06-02T13:39:31.0254794Z Getting action download info
+2025-06-02T13:39:31.2950363Z ##[group]Download immutable action package 'actions/checkout@v4'
+2025-06-02T13:39:31.2951391Z Version: 4.2.2
+2025-06-02T13:39:31.2952459Z Digest: sha256:ccb2698953eaebd21c7bf6268a94f9c26518a7e38e27e0b83c1fe1ad049819b1
+2025-06-02T13:39:31.2953644Z Source commit SHA: 11bd71901bbe5b1630ceea73d27597364c9af683
+2025-06-02T13:39:31.2954369Z ##[endgroup]
+2025-06-02T13:39:31.3712716Z ##[group]Download immutable action package 'actions/setup-python@v5'
+2025-06-02T13:39:31.3713500Z Version: 5.6.0
+2025-06-02T13:39:31.3714205Z Digest: sha256:0b35a0c11c97499e4e0576589036d450b9f5f9da74b7774225b3614b57324404
+2025-06-02T13:39:31.3715218Z Source commit SHA: a26af69be951a213d495a4c3e4e4022e16d87065
+2025-06-02T13:39:31.3716163Z ##[endgroup]
+2025-06-02T13:39:31.5975542Z Download action repository 'astral-sh/setup-uv@v3' (SHA:caf0cab7a618c569241d31dcd442f54681755d39)
+2025-06-02T13:39:32.0987242Z Complete job name: test (3.11)

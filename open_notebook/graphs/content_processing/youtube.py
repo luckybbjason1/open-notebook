@@ -25,8 +25,11 @@ async def get_video_title(video_id):
         soup = BeautifulSoup(html, "html.parser")
 
         # YouTube stores title in a meta tag
-        title = soup.find("meta", property="og:title")["content"]
-        return title
+        title_tag = soup.find("meta", property="og:title")
+        if title_tag and hasattr(title_tag, "get"):
+            content = title_tag.get("content")
+            return content if isinstance(content, str) else None
+        return None
 
     except Exception as e:
         logger.error(f"Failed to get video title: {e}")

@@ -1,0 +1,499 @@
+﻿2025-06-02T13:39:30.9645023Z Current runner version: '2.324.0'
+2025-06-02T13:39:30.9680050Z ##[group]Operating System
+2025-06-02T13:39:30.9681241Z Ubuntu
+2025-06-02T13:39:30.9681994Z 24.04.2
+2025-06-02T13:39:30.9682673Z LTS
+2025-06-02T13:39:30.9683522Z ##[endgroup]
+2025-06-02T13:39:30.9684322Z ##[group]Runner Image
+2025-06-02T13:39:30.9685282Z Image: ubuntu-24.04
+2025-06-02T13:39:30.9686509Z Version: 20250527.1.0
+2025-06-02T13:39:30.9688228Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20250527.1/images/ubuntu/Ubuntu2404-Readme.md
+2025-06-02T13:39:30.9690639Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250527.1
+2025-06-02T13:39:30.9692364Z ##[endgroup]
+2025-06-02T13:39:30.9693266Z ##[group]Runner Image Provisioner
+2025-06-02T13:39:30.9694349Z 2.0.437.1
+2025-06-02T13:39:30.9695108Z ##[endgroup]
+2025-06-02T13:39:30.9699694Z ##[group]GITHUB_TOKEN Permissions
+2025-06-02T13:39:30.9702776Z Actions: write
+2025-06-02T13:39:30.9703823Z Attestations: write
+2025-06-02T13:39:30.9704838Z Checks: write
+2025-06-02T13:39:30.9705632Z Contents: write
+2025-06-02T13:39:30.9706797Z Deployments: write
+2025-06-02T13:39:30.9707682Z Discussions: write
+2025-06-02T13:39:30.9708487Z Issues: write
+2025-06-02T13:39:30.9709405Z Metadata: read
+2025-06-02T13:39:30.9710195Z Models: read
+2025-06-02T13:39:30.9711042Z Packages: write
+2025-06-02T13:39:30.9711922Z Pages: write
+2025-06-02T13:39:30.9712794Z PullRequests: write
+2025-06-02T13:39:30.9713618Z RepositoryProjects: write
+2025-06-02T13:39:30.9714659Z SecurityEvents: write
+2025-06-02T13:39:30.9715466Z Statuses: write
+2025-06-02T13:39:30.9716465Z ##[endgroup]
+2025-06-02T13:39:30.9719499Z Secret source: Actions
+2025-06-02T13:39:30.9720708Z Prepare workflow directory
+2025-06-02T13:39:31.0197305Z Prepare all required actions
+2025-06-02T13:39:31.0254826Z Getting action download info
+2025-06-02T13:39:31.2950401Z ##[group]Download immutable action package 'actions/checkout@v4'
+2025-06-02T13:39:31.2951398Z Version: 4.2.2
+2025-06-02T13:39:31.2952495Z Digest: sha256:ccb2698953eaebd21c7bf6268a94f9c26518a7e38e27e0b83c1fe1ad049819b1
+2025-06-02T13:39:31.2953650Z Source commit SHA: 11bd71901bbe5b1630ceea73d27597364c9af683
+2025-06-02T13:39:31.2954372Z ##[endgroup]
+2025-06-02T13:39:31.3712739Z ##[group]Download immutable action package 'actions/setup-python@v5'
+2025-06-02T13:39:31.3713503Z Version: 5.6.0
+2025-06-02T13:39:31.3714208Z Digest: sha256:0b35a0c11c97499e4e0576589036d450b9f5f9da74b7774225b3614b57324404
+2025-06-02T13:39:31.3715259Z Source commit SHA: a26af69be951a213d495a4c3e4e4022e16d87065
+2025-06-02T13:39:31.3716171Z ##[endgroup]
+2025-06-02T13:39:31.5975573Z Download action repository 'astral-sh/setup-uv@v3' (SHA:caf0cab7a618c569241d31dcd442f54681755d39)
+2025-06-02T13:39:32.0987272Z Complete job name: test (3.11)
+2025-06-02T13:39:32.1674056Z ##[group]Run actions/checkout@v4
+2025-06-02T13:39:32.1674976Z with:
+2025-06-02T13:39:32.1675455Z   repository: luckybbjason1/open-notebook
+2025-06-02T13:39:32.1676413Z   token: ***
+2025-06-02T13:39:32.1676851Z   ssh-strict: true
+2025-06-02T13:39:32.1677333Z   ssh-user: git
+2025-06-02T13:39:32.1677884Z   persist-credentials: true
+2025-06-02T13:39:32.1678389Z   clean: true
+2025-06-02T13:39:32.1678860Z   sparse-checkout-cone-mode: true
+2025-06-02T13:39:32.1679430Z   fetch-depth: 1
+2025-06-02T13:39:32.1679890Z   fetch-tags: false
+2025-06-02T13:39:32.1680339Z   show-progress: true
+2025-06-02T13:39:32.1680799Z   lfs: false
+2025-06-02T13:39:32.1681235Z   submodules: false
+2025-06-02T13:39:32.1681691Z   set-safe-directory: true
+2025-06-02T13:39:32.1682458Z ##[endgroup]
+2025-06-02T13:39:32.3250735Z Syncing repository: luckybbjason1/open-notebook
+2025-06-02T13:39:32.3252939Z ##[group]Getting Git version info
+2025-06-02T13:39:32.3253900Z Working directory is '/home/runner/work/open-notebook/open-notebook'
+2025-06-02T13:39:32.3255212Z [command]/usr/bin/git version
+2025-06-02T13:39:32.3300090Z git version 2.49.0
+2025-06-02T13:39:32.3327156Z ##[endgroup]
+2025-06-02T13:39:32.3343279Z Temporarily overriding HOME='/home/runner/work/_temp/7a2facac-a099-40b2-9918-87d136bac9fb' before making global git config changes
+2025-06-02T13:39:32.3346789Z Adding repository directory to the temporary git global config as a safe directory
+2025-06-02T13:39:32.3349833Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/open-notebook/open-notebook
+2025-06-02T13:39:32.3383403Z Deleting the contents of '/home/runner/work/open-notebook/open-notebook'
+2025-06-02T13:39:32.3387085Z ##[group]Initializing the repository
+2025-06-02T13:39:32.3392137Z [command]/usr/bin/git init /home/runner/work/open-notebook/open-notebook
+2025-06-02T13:39:32.3447753Z hint: Using 'master' as the name for the initial branch. This default branch name
+2025-06-02T13:39:32.3449359Z hint: is subject to change. To configure the initial branch name to use in all
+2025-06-02T13:39:32.3450608Z hint: of your new repositories, which will suppress this warning, call:
+2025-06-02T13:39:32.3451834Z hint:
+2025-06-02T13:39:32.3452462Z hint: 	git config --global init.defaultBranch <name>
+2025-06-02T13:39:32.3453748Z hint:
+2025-06-02T13:39:32.3454990Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2025-06-02T13:39:32.3457230Z hint: 'development'. The just-created branch can be renamed via this command:
+2025-06-02T13:39:32.3458839Z hint:
+2025-06-02T13:39:32.3459629Z hint: 	git branch -m <name>
+2025-06-02T13:39:32.3461216Z Initialized empty Git repository in /home/runner/work/open-notebook/open-notebook/.git/
+2025-06-02T13:39:32.3465521Z [command]/usr/bin/git remote add origin https://github.com/luckybbjason1/open-notebook
+2025-06-02T13:39:32.3498104Z ##[endgroup]
+2025-06-02T13:39:32.3498919Z ##[group]Disabling automatic garbage collection
+2025-06-02T13:39:32.3501806Z [command]/usr/bin/git config --local gc.auto 0
+2025-06-02T13:39:32.3530038Z ##[endgroup]
+2025-06-02T13:39:32.3530794Z ##[group]Setting up auth
+2025-06-02T13:39:32.3536876Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-06-02T13:39:32.3568468Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-06-02T13:39:32.3832781Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-06-02T13:39:32.3872240Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-06-02T13:39:32.4093808Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2025-06-02T13:39:32.4129070Z ##[endgroup]
+2025-06-02T13:39:32.4130978Z ##[group]Fetching the repository
+2025-06-02T13:39:32.4139395Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +d162b9ba88cbe17add238ecd4ba41da549ab7fe4:refs/remotes/pull/1/merge
+2025-06-02T13:39:32.8906546Z From https://github.com/luckybbjason1/open-notebook
+2025-06-02T13:39:32.8909858Z  * [new ref]         d162b9ba88cbe17add238ecd4ba41da549ab7fe4 -> pull/1/merge
+2025-06-02T13:39:32.8930090Z ##[endgroup]
+2025-06-02T13:39:32.8931101Z ##[group]Determining the checkout info
+2025-06-02T13:39:32.8932545Z ##[endgroup]
+2025-06-02T13:39:32.8937496Z [command]/usr/bin/git sparse-checkout disable
+2025-06-02T13:39:32.8976496Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2025-06-02T13:39:32.9005132Z ##[group]Checking out the ref
+2025-06-02T13:39:32.9009383Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/1/merge
+2025-06-02T13:39:32.9147053Z Note: switching to 'refs/remotes/pull/1/merge'.
+2025-06-02T13:39:32.9148145Z 
+2025-06-02T13:39:32.9149067Z You are in 'detached HEAD' state. You can look around, make experimental
+2025-06-02T13:39:32.9151116Z changes and commit them, and you can discard any commits you make in this
+2025-06-02T13:39:32.9153697Z state without impacting any branches by switching back to a branch.
+2025-06-02T13:39:32.9155652Z 
+2025-06-02T13:39:32.9156832Z If you want to create a new branch to retain commits you create, you may
+2025-06-02T13:39:32.9159083Z do so (now or later) by using -c with the switch command. Example:
+2025-06-02T13:39:32.9160456Z 
+2025-06-02T13:39:32.9161010Z   git switch -c <new-branch-name>
+2025-06-02T13:39:32.9161933Z 
+2025-06-02T13:39:32.9162411Z Or undo this operation with:
+2025-06-02T13:39:32.9163203Z 
+2025-06-02T13:39:32.9163627Z   git switch -
+2025-06-02T13:39:32.9164230Z 
+2025-06-02T13:39:32.9165269Z Turn off this advice by setting config variable advice.detachedHead to false
+2025-06-02T13:39:32.9166946Z 
+2025-06-02T13:39:32.9168349Z HEAD is now at d162b9b Merge 7aff1416e4d0473aa20e1650226eabfa7a31bec8 into 01f2ae1f485dfb8c98ee5e1b35e47bbf0fe2c6ae
+2025-06-02T13:39:32.9172174Z ##[endgroup]
+2025-06-02T13:39:32.9192263Z [command]/usr/bin/git log -1 --format=%H
+2025-06-02T13:39:32.9214758Z d162b9ba88cbe17add238ecd4ba41da549ab7fe4
+2025-06-02T13:39:32.9524641Z ##[group]Run actions/setup-python@v5
+2025-06-02T13:39:32.9525867Z with:
+2025-06-02T13:39:32.9526581Z   python-version: 3.11
+2025-06-02T13:39:32.9527447Z   check-latest: false
+2025-06-02T13:39:32.9528530Z   token: ***
+2025-06-02T13:39:32.9529296Z   update-environment: true
+2025-06-02T13:39:32.9530237Z   allow-prereleases: false
+2025-06-02T13:39:32.9531158Z   freethreaded: false
+2025-06-02T13:39:32.9531981Z ##[endgroup]
+2025-06-02T13:39:33.1224516Z ##[group]Installed versions
+2025-06-02T13:39:33.1288133Z Successfully set up CPython (3.11.12)
+2025-06-02T13:39:33.1290169Z ##[endgroup]
+2025-06-02T13:39:33.1553889Z ##[group]Run astral-sh/setup-uv@v3
+2025-06-02T13:39:33.1554914Z with:
+2025-06-02T13:39:33.1555616Z   version: latest
+2025-06-02T13:39:33.1556937Z   github-token: ***
+2025-06-02T13:39:33.1557765Z   enable-cache: false
+2025-06-02T13:39:33.1558652Z   cache-dependency-glob: **/uv.lock
+2025-06-02T13:39:33.1559690Z   prune-cache: true
+2025-06-02T13:39:33.1560469Z env:
+2025-06-02T13:39:33.1561429Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.12/x64
+2025-06-02T13:39:33.1563148Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.12/x64/lib/pkgconfig
+2025-06-02T13:39:33.1564834Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.12/x64
+2025-06-02T13:39:33.1566490Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.12/x64
+2025-06-02T13:39:33.1568016Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.12/x64
+2025-06-02T13:39:33.1569573Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.12/x64/lib
+2025-06-02T13:39:33.1570843Z ##[endgroup]
+2025-06-02T13:39:33.3194220Z Downloading uv from "https://github.com/astral-sh/uv/releases/latest/download/uv-x86_64-unknown-linux-gnu.tar.gz" ...
+2025-06-02T13:39:33.7773454Z [command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/fdbc741f-8275-4140-a3f9-e236ae2dbc0a -f /home/runner/work/_temp/7facaa76-5f5b-4499-a52f-19956ff1a1ff
+2025-06-02T13:39:34.1318814Z Added /opt/hostedtoolcache/uv/0.7.9/x86_64 to the path
+2025-06-02T13:39:34.1319839Z Added /home/runner/.local/bin to the path
+2025-06-02T13:39:34.1324252Z Successfully installed uv version 0.7.9
+2025-06-02T13:39:34.1334241Z Set UV_CACHE_DIR to /home/runner/work/_temp/setup-uv-cache
+2025-06-02T13:39:34.1440725Z ##[group]Run uv sync --dev
+2025-06-02T13:39:34.1441082Z [36;1muv sync --dev[0m
+2025-06-02T13:39:34.1559018Z shell: /usr/bin/bash -e {0}
+2025-06-02T13:39:34.1559338Z env:
+2025-06-02T13:39:34.1559658Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.12/x64
+2025-06-02T13:39:34.1560182Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.12/x64/lib/pkgconfig
+2025-06-02T13:39:34.1560680Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.12/x64
+2025-06-02T13:39:34.1561133Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.12/x64
+2025-06-02T13:39:34.1561579Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.12/x64
+2025-06-02T13:39:34.1562046Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.12/x64/lib
+2025-06-02T13:39:34.1562494Z   UV_CACHE_DIR: /home/runner/work/_temp/setup-uv-cache
+2025-06-02T13:39:34.1563083Z ##[endgroup]
+2025-06-02T13:39:34.8185686Z Using CPython 3.11.12 interpreter at: /opt/hostedtoolcache/Python/3.11.12/x64/bin/python3
+2025-06-02T13:39:34.8186793Z Creating virtual environment at: .venv
+2025-06-02T13:39:34.8408760Z Resolved 248 packages in 0.84ms
+2025-06-02T13:39:34.8598779Z    Building open-notebook @ file:///home/runner/work/open-notebook/open-notebook
+2025-06-02T13:39:34.8600404Z    Updating https://github.com/lfnovo/surreal-lite-py (HEAD)
+2025-06-02T13:39:34.8816781Z Downloading pandas (12.5MiB)
+2025-06-02T13:39:34.8823746Z Downloading numpy (17.4MiB)
+2025-06-02T13:39:34.8856869Z Downloading virtualenv (4.1MiB)
+2025-06-02T13:39:34.8859734Z Downloading pygments (1.2MiB)
+2025-06-02T13:39:34.8902345Z Downloading sphinx-rtd-theme (7.3MiB)
+2025-06-02T13:39:34.8950894Z Downloading zstandard (5.2MiB)
+2025-06-02T13:39:34.8955637Z Downloading aiohttp (1.6MiB)
+2025-06-02T13:39:34.8959101Z Downloading rapidfuzz (3.0MiB)
+2025-06-02T13:39:34.8962730Z Downloading babel (9.7MiB)
+2025-06-02T13:39:34.8965456Z Downloading pydeck (6.6MiB)
+2025-06-02T13:39:34.8972735Z Downloading pydantic-core (2.0MiB)
+2025-06-02T13:39:34.8977227Z Downloading streamlit (9.3MiB)
+2025-06-02T13:39:34.8987933Z Downloading setuptools (1.2MiB)
+2025-06-02T13:39:34.8997925Z Downloading streamlit-tags (2.6MiB)
+2025-06-02T13:39:34.9002772Z Downloading langchain-community (2.4MiB)
+2025-06-02T13:39:34.9008033Z Downloading tiktoken (1.1MiB)
+2025-06-02T13:39:34.9012254Z Downloading pymupdf (18.7MiB)
+2025-06-02T13:39:34.9015616Z Downloading litellm (6.6MiB)
+2025-06-02T13:39:34.9020834Z Downloading google-api-python-client (12.5MiB)
+2025-06-02T13:39:34.9025411Z Downloading google-cloud-aiplatform (7.0MiB)
+2025-06-02T13:39:34.9029471Z Downloading grpcio (5.7MiB)
+2025-06-02T13:39:34.9033670Z Downloading sqlalchemy (3.1MiB)
+2025-06-02T13:39:34.9037635Z Downloading cython (3.4MiB)
+2025-06-02T13:39:34.9043958Z Downloading pillow (4.3MiB)
+2025-06-02T13:39:34.9051830Z Downloading sphinx (3.3MiB)
+2025-06-02T13:39:34.9056775Z Downloading google-ai-generativelanguage (1.3MiB)
+2025-06-02T13:39:34.9061952Z Downloading pyarrow (40.1MiB)
+2025-06-02T13:39:34.9066307Z Downloading shapely (2.4MiB)
+2025-06-02T13:39:34.9070912Z Downloading lxml (4.8MiB)
+2025-06-02T13:39:34.9075443Z Downloading tokenizers (2.9MiB)
+2025-06-02T13:39:35.1821865Z     Updated https://github.com/lfnovo/surreal-lite-py (30c250ade7ae9a8dca17f8114a1a05a4c6ce19e1)
+2025-06-02T13:39:35.1840239Z    Building sdblpy @ git+https://github.com/lfnovo/surreal-lite-py@30c250ade7ae9a8dca17f8114a1a05a4c6ce19e1
+2025-06-02T13:39:35.5564736Z    Building langdetect==1.0.9
+2025-06-02T13:39:35.7587175Z  Downloading tiktoken
+2025-06-02T13:39:35.7760705Z  Downloading pygments
+2025-06-02T13:39:35.9122394Z  Downloading google-ai-generativelanguage
+2025-06-02T13:39:36.0326336Z  Downloading aiohttp
+2025-06-02T13:39:36.2374539Z  Downloading pydantic-core
+2025-06-02T13:39:36.2704764Z  Downloading setuptools
+2025-06-02T13:39:36.5756124Z  Downloading streamlit-tags
+2025-06-02T13:39:36.7309083Z    Building ffmpeg==1.4
+2025-06-02T13:39:36.7333471Z  Downloading tokenizers
+2025-06-02T13:39:36.7402284Z    Building pandoc==2.4
+2025-06-02T13:39:36.7608253Z  Downloading shapely
+2025-06-02T13:39:36.7996382Z  Downloading rapidfuzz
+2025-06-02T13:39:36.9546307Z  Downloading sqlalchemy
+2025-06-02T13:39:37.1881181Z  Downloading cython
+2025-06-02T13:39:37.2049522Z  Downloading virtualenv
+2025-06-02T13:39:37.2451210Z  Downloading sphinx
+2025-06-02T13:39:37.2779991Z  Downloading pillow
+2025-06-02T13:39:37.4744222Z  Downloading lxml
+2025-06-02T13:39:37.6132865Z  Downloading zstandard
+2025-06-02T13:39:37.8497406Z  Downloading grpcio
+2025-06-02T13:39:38.0792896Z  Downloading pydeck
+2025-06-02T13:39:38.1300504Z       Built pandoc==2.4
+2025-06-02T13:39:38.1590762Z       Built ffmpeg==1.4
+2025-06-02T13:39:38.2830787Z  Downloading langchain-community
+2025-06-02T13:39:38.3182434Z  Downloading sphinx-rtd-theme
+2025-06-02T13:39:38.3506921Z       Built sdblpy @ git+https://github.com/lfnovo/surreal-lite-py@30c250ade7ae9a8dca17f8114a1a05a4c6ce19e1
+2025-06-02T13:39:38.3890834Z  Downloading litellm
+2025-06-02T13:39:38.4171293Z       Built open-notebook @ file:///home/runner/work/open-notebook/open-notebook
+2025-06-02T13:39:38.4512529Z       Built langdetect==1.0.9
+2025-06-02T13:39:38.6523241Z  Downloading streamlit
+2025-06-02T13:39:38.9307551Z  Downloading numpy
+2025-06-02T13:39:39.0042088Z  Downloading pandas
+2025-06-02T13:39:39.0693069Z  Downloading babel
+2025-06-02T13:39:39.0715911Z  Downloading pymupdf
+2025-06-02T13:39:39.0829031Z  Downloading google-cloud-aiplatform
+2025-06-02T13:39:39.1083488Z  Downloading google-api-python-client
+2025-06-02T13:39:39.1821920Z  Downloading pyarrow
+2025-06-02T13:39:39.1824372Z Prepared 218 packages in 4.33s
+2025-06-02T13:39:39.4852734Z Installed 218 packages in 302ms
+2025-06-02T13:39:39.4856852Z  + aiohappyeyeballs==2.6.0
+2025-06-02T13:39:39.4860731Z  + aiohttp==3.11.13
+2025-06-02T13:39:39.4864890Z  + aiosignal==1.3.2
+2025-06-02T13:39:39.4867470Z  + aiosqlite==0.21.0
+2025-06-02T13:39:39.4872810Z  + alabaster==1.0.0
+2025-06-02T13:39:39.4875001Z  + altair==5.5.0
+2025-06-02T13:39:39.4876964Z  + annotated-types==0.7.0
+2025-06-02T13:39:39.4878683Z  + anthropic==0.49.0
+2025-06-02T13:39:39.4880325Z  + anyio==4.8.0
+2025-06-02T13:39:39.4881933Z  + attrs==25.1.0
+2025-06-02T13:39:39.4883521Z  + babel==2.17.0
+2025-06-02T13:39:39.4892853Z  + beautifulsoup4==4.13.3
+2025-06-02T13:39:39.4893196Z  + bleach==6.2.0
+2025-06-02T13:39:39.4893470Z  + blinker==1.9.0
+2025-06-02T13:39:39.4893744Z  + bs4==0.0.2
+2025-06-02T13:39:39.4894012Z  + cachetools==5.5.2
+2025-06-02T13:39:39.4894299Z  + certifi==2025.1.31
+2025-06-02T13:39:39.4894582Z  + cfgv==3.4.0
+2025-06-02T13:39:39.4894867Z  + charset-normalizer==3.4.1
+2025-06-02T13:39:39.4895201Z  + click==8.1.8
+2025-06-02T13:39:39.4895461Z  + cython==3.0.12
+2025-06-02T13:39:39.4895887Z  + dataclasses-json==0.6.7
+2025-06-02T13:39:39.4896215Z  + defusedxml==0.7.1
+2025-06-02T13:39:39.4896503Z  + distlib==0.3.9
+2025-06-02T13:39:39.4896769Z  + distro==1.9.0
+2025-06-02T13:39:39.4897074Z  + docstring-parser==0.16
+2025-06-02T13:39:39.4897399Z  + docutils==0.21.2
+2025-06-02T13:39:39.4897681Z  + edge-tts==6.1.19
+2025-06-02T13:39:39.4897960Z  + elevenlabs==1.54.0
+2025-06-02T13:39:39.4898260Z  + et-xmlfile==2.0.0
+2025-06-02T13:39:39.4898544Z  + execnet==2.1.1
+2025-06-02T13:39:39.4898829Z  + fastjsonschema==2.21.1
+2025-06-02T13:39:39.4899140Z  + ffmpeg==1.4
+2025-06-02T13:39:39.4899400Z  + filelock==3.17.0
+2025-06-02T13:39:39.4899674Z  + filetype==1.2.0
+2025-06-02T13:39:39.4899950Z  + frozenlist==1.5.0
+2025-06-02T13:39:39.4900247Z  + fsspec==2025.3.0
+2025-06-02T13:39:39.4900521Z  + fuzzywuzzy==0.18.0
+2025-06-02T13:39:39.4900808Z  + gitdb==4.0.12
+2025-06-02T13:39:39.4901075Z  + gitpython==3.1.44
+2025-06-02T13:39:39.4901403Z  + google-ai-generativelanguage==0.6.15
+2025-06-02T13:39:39.4901813Z  + google-api-core==2.24.2
+2025-06-02T13:39:39.4902166Z  + google-api-python-client==2.163.0
+2025-06-02T13:39:39.4902554Z  + google-auth==2.38.0
+2025-06-02T13:39:39.4902868Z  + google-auth-httplib2==0.2.0
+2025-06-02T13:39:39.4903253Z  + google-cloud-aiplatform==1.84.0
+2025-06-02T13:39:39.4903640Z  + google-cloud-bigquery==3.30.0
+2025-06-02T13:39:39.4904004Z  + google-cloud-core==2.4.3
+2025-06-02T13:39:39.4904628Z  + google-cloud-resource-manager==1.14.1
+2025-06-02T13:39:39.4905055Z  + google-cloud-storage==2.19.0
+2025-06-02T13:39:39.4905426Z  + google-cloud-texttospeech==2.25.0
+2025-06-02T13:39:39.4905937Z  + google-crc32c==1.6.0
+2025-06-02T13:39:39.4906267Z  + google-generativeai==0.8.4
+2025-06-02T13:39:39.4906628Z  + google-resumable-media==2.7.2
+2025-06-02T13:39:39.4907012Z  + googleapis-common-protos==1.69.1
+2025-06-02T13:39:39.4907375Z  + greenlet==3.1.1
+2025-06-02T13:39:39.4907649Z  + groq==0.18.0
+2025-06-02T13:39:39.4907939Z  + grpc-google-iam-v1==0.14.1
+2025-06-02T13:39:39.4908275Z  + grpcio==1.71.0
+2025-06-02T13:39:39.4908639Z  + grpcio-status==1.71.0
+2025-06-02T13:39:39.4908943Z  + h11==0.14.0
+2025-06-02T13:39:39.4909205Z  + httpcore==1.0.7
+2025-06-02T13:39:39.4909476Z  + httplib2==0.22.0
+2025-06-02T13:39:39.4909961Z  + httpx==0.27.2
+2025-06-02T13:39:39.4910252Z  + httpx-sse==0.4.0
+2025-06-02T13:39:39.4910621Z  + huggingface-hub==0.29.3
+2025-06-02T13:39:39.4910946Z  + humanize==4.12.1
+2025-06-02T13:39:39.4911222Z  + identify==2.6.9
+2025-06-02T13:39:39.4911494Z  + idna==3.10
+2025-06-02T13:39:39.4911752Z  + imagesize==1.4.1
+2025-06-02T13:39:39.4912050Z  + importlib-metadata==8.6.1
+2025-06-02T13:39:39.4912447Z  + iniconfig==2.0.0
+2025-06-02T13:39:39.4912721Z  + jinja2==3.1.6
+2025-06-02T13:39:39.4912981Z  + jiter==0.9.0
+2025-06-02T13:39:39.4913252Z  + jsonpatch==1.33
+2025-06-02T13:39:39.4913528Z  + jsonpointer==3.0.0
+2025-06-02T13:39:39.4913826Z  + jsonschema==4.23.0
+2025-06-02T13:39:39.4914147Z  + jsonschema-specifications==2024.10.1
+2025-06-02T13:39:39.4914551Z  + jupyter-client==8.6.3
+2025-06-02T13:39:39.4914886Z  + jupyter-core==5.7.2
+2025-06-02T13:39:39.4915200Z  + jupyterlab-pygments==0.3.0
+2025-06-02T13:39:39.4915549Z  + langchain==0.3.20
+2025-06-02T13:39:39.4915986Z  + langchain-anthropic==0.3.9
+2025-06-02T13:39:39.4916353Z  + langchain-community==0.3.19
+2025-06-02T13:39:39.4916701Z  + langchain-core==0.3.43
+2025-06-02T13:39:39.4917041Z  + langchain-google-genai==2.0.10
+2025-06-02T13:39:39.4917432Z  + langchain-google-vertexai==2.0.10
+2025-06-02T13:39:39.4917818Z  + langchain-groq==0.2.5
+2025-06-02T13:39:39.4918134Z  + langchain-ollama==0.2.3
+2025-06-02T13:39:39.4918469Z  + langchain-openai==0.3.8
+2025-06-02T13:39:39.4918817Z  + langchain-text-splitters==0.3.6
+2025-06-02T13:39:39.4919179Z  + langdetect==1.0.9
+2025-06-02T13:39:39.4919469Z  + langgraph==0.3.6
+2025-06-02T13:39:39.4919764Z  + langgraph-checkpoint==2.0.18
+2025-06-02T13:39:39.4920155Z  + langgraph-checkpoint-sqlite==2.0.6
+2025-06-02T13:39:39.4920554Z  + langgraph-prebuilt==0.1.2
+2025-06-02T13:39:39.4920897Z  + langgraph-sdk==0.1.55
+2025-06-02T13:39:39.4921203Z  + langsmith==0.3.13
+2025-06-02T13:39:39.4921497Z  + levenshtein==0.26.1
+2025-06-02T13:39:39.4921784Z  + litellm==1.63.6
+2025-06-02T13:39:39.4922055Z  + loguru==0.7.3
+2025-06-02T13:39:39.4922325Z  + lxml==5.3.1
+2025-06-02T13:39:39.4922614Z  + markdown-it-py==3.0.0
+2025-06-02T13:39:39.4922928Z  + markupsafe==3.0.2
+2025-06-02T13:39:39.4923219Z  + marshmallow==3.26.1
+2025-06-02T13:39:39.4923509Z  + mdurl==0.1.2
+2025-06-02T13:39:39.4923775Z  + mistune==3.1.2
+2025-06-02T13:39:39.4924040Z  + msgpack==1.1.0
+2025-06-02T13:39:39.4924313Z  + multidict==6.1.0
+2025-06-02T13:39:39.4924603Z  + mypy-extensions==1.0.0
+2025-06-02T13:39:39.4924914Z  + narwhals==1.30.0
+2025-06-02T13:39:39.4925179Z  + nbclient==0.10.2
+2025-06-02T13:39:39.4925454Z  + nbconvert==7.16.6
+2025-06-02T13:39:39.4925727Z  + nbformat==5.10.4
+2025-06-02T13:39:39.4926147Z  + nbsphinx==0.9.7
+2025-06-02T13:39:39.4926426Z  + nest-asyncio==1.6.0
+2025-06-02T13:39:39.4926723Z  + nodeenv==1.9.1
+2025-06-02T13:39:39.4927394Z  + numpy==1.26.4
+2025-06-02T13:39:39.4927665Z  + ollama==0.4.7
+2025-06-02T13:39:39.4928163Z  + open-notebook==0.1.2 (from file:///home/runner/work/open-notebook/open-notebook)
+2025-06-02T13:39:39.4928999Z  + openai==1.66.2
+2025-06-02T13:39:39.4929296Z  + openpyxl==3.1.5
+2025-06-02T13:39:39.4929573Z  + orjson==3.10.15
+2025-06-02T13:39:39.4929855Z  + packaging==24.2
+2025-06-02T13:39:39.4930124Z  + pandas==2.2.3
+2025-06-02T13:39:39.4930580Z  + pandoc==2.4
+2025-06-02T13:39:39.4930873Z  + pandocfilters==1.5.1
+2025-06-02T13:39:39.4931185Z  + pillow==11.1.0
+2025-06-02T13:39:39.4931468Z  + platformdirs==4.3.6
+2025-06-02T13:39:39.4931758Z  + pluggy==1.5.0
+2025-06-02T13:39:39.4932031Z  + plumbum==1.9.0
+2025-06-02T13:39:39.4932293Z  + ply==3.11
+2025-06-02T13:39:39.4932552Z  + podcastfy==0.4.1
+2025-06-02T13:39:39.4932832Z  + pre-commit==4.1.0
+2025-06-02T13:39:39.4933125Z  + propcache==0.3.0
+2025-06-02T13:39:39.4933407Z  + proto-plus==1.26.1
+2025-06-02T13:39:39.4933703Z  + protobuf==5.29.3
+2025-06-02T13:39:39.4933972Z  + pyarrow==19.0.1
+2025-06-02T13:39:39.4934246Z  + pyasn1==0.6.1
+2025-06-02T13:39:39.4934525Z  + pyasn1-modules==0.4.1
+2025-06-02T13:39:39.4934840Z  + pydantic==2.9.2
+2025-06-02T13:39:39.4935128Z  + pydantic-core==2.23.4
+2025-06-02T13:39:39.4935642Z  + pydantic-settings==2.8.1
+2025-06-02T13:39:39.4936125Z  + pydeck==0.9.1
+2025-06-02T13:39:39.4936390Z  + pydub==0.25.1
+2025-06-02T13:39:39.4936662Z  + pygments==2.19.1
+2025-06-02T13:39:39.4936943Z  + pymupdf==1.24.11
+2025-06-02T13:39:39.4937221Z  + pyparsing==3.2.1
+2025-06-02T13:39:39.4937487Z  + pytest==8.3.5
+2025-06-02T13:39:39.4937764Z  + pytest-xdist==3.6.1
+2025-06-02T13:39:39.4938077Z  + python-dateutil==2.9.0.post0
+2025-06-02T13:39:39.4938424Z  + python-docx==1.1.2
+2025-06-02T13:39:39.4938736Z  + python-dotenv==1.0.1
+2025-06-02T13:39:39.4939059Z  + python-levenshtein==0.26.1
+2025-06-02T13:39:39.4939406Z  + python-magic==0.4.27
+2025-06-02T13:39:39.4939715Z  + python-pptx==1.0.2
+2025-06-02T13:39:39.4940016Z  + pytz==2024.2
+2025-06-02T13:39:39.4940278Z  + pyyaml==6.0.2
+2025-06-02T13:39:39.4940551Z  + pyzmq==26.2.1
+2025-06-02T13:39:39.4940818Z  + rapidfuzz==3.12.2
+2025-06-02T13:39:39.4941117Z  + referencing==0.36.2
+2025-06-02T13:39:39.4941402Z  + regex==2024.11.6
+2025-06-02T13:39:39.4941678Z  + requests==2.32.3
+2025-06-02T13:39:39.4941968Z  + requests-toolbelt==1.0.0
+2025-06-02T13:39:39.4942287Z  + rich==13.9.4
+2025-06-02T13:39:39.4942550Z  + rpds-py==0.23.1
+2025-06-02T13:39:39.4942820Z  + rsa==4.9
+2025-06-02T13:39:39.4943466Z  + sdblpy==0.3.0 (from git+https://github.com/lfnovo/surreal-lite-py@30c250ade7ae9a8dca17f8114a1a05a4c6ce19e1)
+2025-06-02T13:39:39.4944198Z  + setuptools==75.9.1
+2025-06-02T13:39:39.4944489Z  + shapely==2.0.7
+2025-06-02T13:39:39.4944762Z  + shellingham==1.5.4
+2025-06-02T13:39:39.4945047Z  + six==1.17.0
+2025-06-02T13:39:39.4945303Z  + smmap==5.0.2
+2025-06-02T13:39:39.4945570Z  + sniffio==1.3.1
+2025-06-02T13:39:39.4945992Z  + snowballstemmer==2.2.0
+2025-06-02T13:39:39.4946312Z  + socksio==1.0.0
+2025-06-02T13:39:39.4946586Z  + soupsieve==2.6
+2025-06-02T13:39:39.4946854Z  + sphinx==8.1.3
+2025-06-02T13:39:39.4947167Z  + sphinx-autodoc-typehints==2.5.0
+2025-06-02T13:39:39.4947548Z  + sphinx-rtd-theme==3.0.2
+2025-06-02T13:39:39.4947906Z  + sphinxcontrib-applehelp==2.0.0
+2025-06-02T13:39:39.4948297Z  + sphinxcontrib-devhelp==2.0.0
+2025-06-02T13:39:39.4948680Z  + sphinxcontrib-htmlhelp==2.1.0
+2025-06-02T13:39:39.4949049Z  + sphinxcontrib-jquery==4.1
+2025-06-02T13:39:39.4949412Z  + sphinxcontrib-jsmath==1.0.1
+2025-06-02T13:39:39.4949768Z  + sphinxcontrib-qthelp==2.0.0
+2025-06-02T13:39:39.4950155Z  + sphinxcontrib-serializinghtml==2.0.0
+2025-06-02T13:39:39.4950554Z  + sqlalchemy==2.0.39
+2025-06-02T13:39:39.4950842Z  + streamlit==1.43.2
+2025-06-02T13:39:39.4951145Z  + streamlit-monaco==0.1.3
+2025-06-02T13:39:39.4951501Z  + streamlit-scrollable-textbox==0.0.3
+2025-06-02T13:39:39.4951902Z  + streamlit-tags==1.2.8
+2025-06-02T13:39:39.4952289Z  + tenacity==9.0.0
+2025-06-02T13:39:39.4952579Z  + tiktoken==0.9.0
+2025-06-02T13:39:39.4952854Z  + tinycss2==1.4.0
+2025-06-02T13:39:39.4953135Z  + tokenizers==0.21.0
+2025-06-02T13:39:39.4953415Z  + toml==0.10.2
+2025-06-02T13:39:39.4953681Z  + tomli==2.2.1
+2025-06-02T13:39:39.4953938Z  + tornado==6.4.2
+2025-06-02T13:39:39.4954204Z  + tqdm==4.67.1
+2025-06-02T13:39:39.4954470Z  + traitlets==5.14.3
+2025-06-02T13:39:39.4954754Z  + typer==0.12.5
+2025-06-02T13:39:39.4955040Z  + types-pyyaml==6.0.12.20241230
+2025-06-02T13:39:39.4955554Z  + typing-extensions==4.12.2
+2025-06-02T13:39:39.4956041Z  + typing-inspect==0.9.0
+2025-06-02T13:39:39.4956358Z  + tzdata==2025.1
+2025-06-02T13:39:39.4956644Z  + uritemplate==4.1.1
+2025-06-02T13:39:39.4956926Z  + urllib3==2.3.0
+2025-06-02T13:39:39.4957206Z  + virtualenv==20.29.3
+2025-06-02T13:39:39.4957493Z  + watchdog==6.0.0
+2025-06-02T13:39:39.4957778Z  + webencodings==0.5.1
+2025-06-02T13:39:39.4958112Z  + websockets==13.1
+2025-06-02T13:39:39.4958386Z  + wheel==0.44.0
+2025-06-02T13:39:39.4958663Z  + xlsxwriter==3.2.2
+2025-06-02T13:39:39.4958941Z  + yarl==1.18.3
+2025-06-02T13:39:39.4959229Z  + youtube-transcript-api==0.6.3
+2025-06-02T13:39:39.4959576Z  + zipp==3.21.0
+2025-06-02T13:39:39.4959841Z  + zstandard==0.23.0
+2025-06-02T13:39:39.5022596Z ##[group]Run uv run ruff check .
+2025-06-02T13:39:39.5023030Z [36;1muv run ruff check .[0m
+2025-06-02T13:39:39.5090769Z shell: /usr/bin/bash -e {0}
+2025-06-02T13:39:39.5091113Z env:
+2025-06-02T13:39:39.5091481Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.12/x64
+2025-06-02T13:39:39.5092149Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.12/x64/lib/pkgconfig
+2025-06-02T13:39:39.5092779Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.12/x64
+2025-06-02T13:39:39.5093346Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.12/x64
+2025-06-02T13:39:39.5093915Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.12/x64
+2025-06-02T13:39:39.5094479Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.12/x64/lib
+2025-06-02T13:39:39.5095029Z   UV_CACHE_DIR: /home/runner/work/_temp/setup-uv-cache
+2025-06-02T13:39:39.5095469Z ##[endgroup]
+2025-06-02T13:39:39.6086880Z error: Failed to spawn: `ruff`
+2025-06-02T13:39:39.6087437Z   Caused by: No such file or directory (os error 2)
+2025-06-02T13:39:39.6112193Z ##[error]Process completed with exit code 2.
+2025-06-02T13:39:39.6215642Z Post job cleanup.
+2025-06-02T13:39:39.7189400Z [command]/usr/bin/git version
+2025-06-02T13:39:39.7236318Z git version 2.49.0
+2025-06-02T13:39:39.7279591Z Temporarily overriding HOME='/home/runner/work/_temp/c2a42329-560f-4205-b5b9-2707b47c2ced' before making global git config changes
+2025-06-02T13:39:39.7280781Z Adding repository directory to the temporary git global config as a safe directory
+2025-06-02T13:39:39.7285266Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/open-notebook/open-notebook
+2025-06-02T13:39:39.7324117Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-06-02T13:39:39.7359290Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-06-02T13:39:39.7604979Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-06-02T13:39:39.7629247Z http.https://github.com/.extraheader
+2025-06-02T13:39:39.7643106Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2025-06-02T13:39:39.7676402Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-06-02T13:39:39.8052699Z Cleaning up orphan processes

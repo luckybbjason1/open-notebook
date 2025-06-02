@@ -1,0 +1,307 @@
+﻿2025-06-02T13:39:33.7229266Z ##[group]Run uv sync --dev
+2025-06-02T13:39:33.7229587Z [36;1muv sync --dev[0m
+2025-06-02T13:39:33.7386491Z shell: /usr/bin/bash -e {0}
+2025-06-02T13:39:33.7386779Z env:
+2025-06-02T13:39:33.7387057Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.10/x64
+2025-06-02T13:39:33.7387532Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.10/x64/lib/pkgconfig
+2025-06-02T13:39:33.7387989Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.10/x64
+2025-06-02T13:39:33.7388396Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.10/x64
+2025-06-02T13:39:33.7388803Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.10/x64
+2025-06-02T13:39:33.7389204Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.10/x64/lib
+2025-06-02T13:39:33.7389607Z   UV_CACHE_DIR: /home/runner/work/_temp/setup-uv-cache
+2025-06-02T13:39:33.7390416Z ##[endgroup]
+2025-06-02T13:39:33.8322058Z Using CPython 3.12.10 interpreter at: /opt/hostedtoolcache/Python/3.12.10/x64/bin/python3
+2025-06-02T13:39:33.8322937Z Creating virtual environment at: .venv
+2025-06-02T13:39:33.8541619Z Resolved 248 packages in 0.78ms
+2025-06-02T13:39:33.8694667Z    Building open-notebook @ file:///home/runner/work/open-notebook/open-notebook
+2025-06-02T13:39:33.8704124Z    Updating https://github.com/lfnovo/surreal-lite-py (HEAD)
+2025-06-02T13:39:33.8988912Z Downloading grpcio (5.6MiB)
+2025-06-02T13:39:33.9022377Z Downloading numpy (17.1MiB)
+2025-06-02T13:39:33.9026566Z Downloading tiktoken (1.1MiB)
+2025-06-02T13:39:33.9032400Z Downloading babel (9.7MiB)
+2025-06-02T13:39:33.9033504Z Downloading pandas (12.1MiB)
+2025-06-02T13:39:33.9039890Z Downloading langchain-community (2.4MiB)
+2025-06-02T13:39:33.9123357Z Downloading sphinx-rtd-theme (7.3MiB)
+2025-06-02T13:39:33.9138522Z Downloading pygments (1.2MiB)
+2025-06-02T13:39:33.9143011Z Downloading sphinx (3.3MiB)
+2025-06-02T13:39:33.9163353Z Downloading pydeck (6.6MiB)
+2025-06-02T13:39:33.9165935Z Downloading pydantic-core (2.0MiB)
+2025-06-02T13:39:33.9169772Z Downloading virtualenv (4.1MiB)
+2025-06-02T13:39:33.9172837Z Downloading litellm (6.6MiB)
+2025-06-02T13:39:33.9180452Z Downloading google-ai-generativelanguage (1.3MiB)
+2025-06-02T13:39:33.9183923Z Downloading pyarrow (40.1MiB)
+2025-06-02T13:39:33.9188065Z Downloading setuptools (1.2MiB)
+2025-06-02T13:39:33.9191343Z Downloading rapidfuzz (3.0MiB)
+2025-06-02T13:39:33.9198466Z Downloading streamlit-tags (2.6MiB)
+2025-06-02T13:39:33.9204220Z Downloading sqlalchemy (3.1MiB)
+2025-06-02T13:39:33.9208672Z Downloading pillow (4.3MiB)
+2025-06-02T13:39:33.9220375Z Downloading google-api-python-client (12.5MiB)
+2025-06-02T13:39:33.9229093Z Downloading aiohttp (1.6MiB)
+2025-06-02T13:39:33.9234019Z Downloading streamlit (9.3MiB)
+2025-06-02T13:39:33.9242507Z Downloading shapely (2.4MiB)
+2025-06-02T13:39:33.9247102Z Downloading lxml (4.8MiB)
+2025-06-02T13:39:33.9251576Z Downloading zstandard (5.2MiB)
+2025-06-02T13:39:33.9255673Z Downloading cython (3.4MiB)
+2025-06-02T13:39:33.9259954Z Downloading pymupdf (18.7MiB)
+2025-06-02T13:39:33.9264813Z Downloading google-cloud-aiplatform (7.0MiB)
+2025-06-02T13:39:33.9346189Z Downloading tokenizers (2.9MiB)
+2025-06-02T13:39:34.1622248Z     Updated https://github.com/lfnovo/surreal-lite-py (30c250ade7ae9a8dca17f8114a1a05a4c6ce19e1)
+2025-06-02T13:39:34.1651889Z    Building sdblpy @ git+https://github.com/lfnovo/surreal-lite-py@30c250ade7ae9a8dca17f8114a1a05a4c6ce19e1
+2025-06-02T13:39:34.7354067Z  Downloading tiktoken
+2025-06-02T13:39:34.8100885Z  Downloading pygments
+2025-06-02T13:39:34.9063149Z  Downloading google-ai-generativelanguage
+2025-06-02T13:39:35.0427233Z  Downloading aiohttp
+2025-06-02T13:39:35.2028394Z  Downloading pydantic-core
+2025-06-02T13:39:35.2638696Z  Downloading setuptools
+2025-06-02T13:39:35.5472981Z  Downloading streamlit-tags
+2025-06-02T13:39:35.6275825Z  Downloading tokenizers
+2025-06-02T13:39:35.6499680Z    Building ffmpeg==1.4
+2025-06-02T13:39:35.6913027Z    Building pandoc==2.4
+2025-06-02T13:39:35.7418246Z  Downloading shapely
+2025-06-02T13:39:35.7751856Z  Downloading rapidfuzz
+2025-06-02T13:39:35.9211977Z  Downloading sqlalchemy
+2025-06-02T13:39:36.1914630Z    Building langdetect==1.0.9
+2025-06-02T13:39:36.3896175Z  Downloading cython
+2025-06-02T13:39:36.4853923Z  Downloading virtualenv
+2025-06-02T13:39:36.5221469Z  Downloading sphinx
+2025-06-02T13:39:36.5932791Z  Downloading pillow
+2025-06-02T13:39:36.8319436Z       Built ffmpeg==1.4
+2025-06-02T13:39:36.8950876Z       Built sdblpy @ git+https://github.com/lfnovo/surreal-lite-py@30c250ade7ae9a8dca17f8114a1a05a4c6ce19e1
+2025-06-02T13:39:36.9169724Z       Built open-notebook @ file:///home/runner/work/open-notebook/open-notebook
+2025-06-02T13:39:36.9307110Z       Built pandoc==2.4
+2025-06-02T13:39:36.9535574Z  Downloading lxml
+2025-06-02T13:39:36.9868179Z  Downloading zstandard
+2025-06-02T13:39:37.0686591Z  Downloading grpcio
+2025-06-02T13:39:37.2171122Z  Downloading pydeck
+2025-06-02T13:39:37.3173221Z  Downloading langchain-community
+2025-06-02T13:39:37.3268935Z  Downloading sphinx-rtd-theme
+2025-06-02T13:39:37.4102250Z  Downloading litellm
+2025-06-02T13:39:37.5676147Z  Downloading streamlit
+2025-06-02T13:39:37.6009096Z       Built langdetect==1.0.9
+2025-06-02T13:39:37.9741121Z  Downloading numpy
+2025-06-02T13:39:38.0365324Z  Downloading pandas
+2025-06-02T13:39:38.0602354Z  Downloading babel
+2025-06-02T13:39:38.0685798Z  Downloading pymupdf
+2025-06-02T13:39:38.0746232Z  Downloading google-cloud-aiplatform
+2025-06-02T13:39:38.0783743Z  Downloading google-api-python-client
+2025-06-02T13:39:38.1584763Z  Downloading pyarrow
+2025-06-02T13:39:38.1587141Z Prepared 218 packages in 4.30s
+2025-06-02T13:39:38.3778386Z Installed 218 packages in 218ms
+2025-06-02T13:39:38.3780475Z  + aiohappyeyeballs==2.6.0
+2025-06-02T13:39:38.3780862Z  + aiohttp==3.11.13
+2025-06-02T13:39:38.3781159Z  + aiosignal==1.3.2
+2025-06-02T13:39:38.3781447Z  + aiosqlite==0.21.0
+2025-06-02T13:39:38.3784584Z  + alabaster==1.0.0
+2025-06-02T13:39:38.3784956Z  + altair==5.5.0
+2025-06-02T13:39:38.3785276Z  + annotated-types==0.7.0
+2025-06-02T13:39:38.3785636Z  + anthropic==0.49.0
+2025-06-02T13:39:38.3785944Z  + anyio==4.8.0
+2025-06-02T13:39:38.3786252Z  + attrs==25.1.0
+2025-06-02T13:39:38.3786530Z  + babel==2.17.0
+2025-06-02T13:39:38.3786822Z  + beautifulsoup4==4.13.3
+2025-06-02T13:39:38.3787147Z  + bleach==6.2.0
+2025-06-02T13:39:38.3787420Z  + blinker==1.9.0
+2025-06-02T13:39:38.3787709Z  + bs4==0.0.2
+2025-06-02T13:39:38.3787977Z  + cachetools==5.5.2
+2025-06-02T13:39:38.3788277Z  + certifi==2025.1.31
+2025-06-02T13:39:38.3788573Z  + cfgv==3.4.0
+2025-06-02T13:39:38.3788885Z  + charset-normalizer==3.4.1
+2025-06-02T13:39:38.3789228Z  + click==8.1.8
+2025-06-02T13:39:38.3789511Z  + cython==3.0.12
+2025-06-02T13:39:38.3789833Z  + dataclasses-json==0.6.7
+2025-06-02T13:39:38.3790350Z  + defusedxml==0.7.1
+2025-06-02T13:39:38.3790674Z  + distlib==0.3.9
+2025-06-02T13:39:38.3790975Z  + distro==1.9.0
+2025-06-02T13:39:38.3791306Z  + docstring-parser==0.16
+2025-06-02T13:39:38.3791642Z  + docutils==0.21.2
+2025-06-02T13:39:38.3791945Z  + edge-tts==6.1.19
+2025-06-02T13:39:38.3792245Z  + elevenlabs==1.54.0
+2025-06-02T13:39:38.3792567Z  + et-xmlfile==2.0.0
+2025-06-02T13:39:38.3792884Z  + execnet==2.1.1
+2025-06-02T13:39:38.3793191Z  + fastjsonschema==2.21.1
+2025-06-02T13:39:38.3793528Z  + ffmpeg==1.4
+2025-06-02T13:39:38.3793812Z  + filelock==3.17.0
+2025-06-02T13:39:38.3794113Z  + filetype==1.2.0
+2025-06-02T13:39:38.3794414Z  + frozenlist==1.5.0
+2025-06-02T13:39:38.3794734Z  + fsspec==2025.3.0
+2025-06-02T13:39:38.3795027Z  + fuzzywuzzy==0.18.0
+2025-06-02T13:39:38.3795342Z  + gitdb==4.0.12
+2025-06-02T13:39:38.3795642Z  + gitpython==3.1.44
+2025-06-02T13:39:38.3795995Z  + google-ai-generativelanguage==0.6.15
+2025-06-02T13:39:38.3796449Z  + google-api-core==2.24.2
+2025-06-02T13:39:38.3796832Z  + google-api-python-client==2.163.0
+2025-06-02T13:39:38.3797258Z  + google-auth==2.38.0
+2025-06-02T13:39:38.3797604Z  + google-auth-httplib2==0.2.0
+2025-06-02T13:39:38.3798035Z  + google-cloud-aiplatform==1.84.0
+2025-06-02T13:39:38.3798462Z  + google-cloud-bigquery==3.30.0
+2025-06-02T13:39:38.3798862Z  + google-cloud-core==2.4.3
+2025-06-02T13:39:38.3799284Z  + google-cloud-resource-manager==1.14.1
+2025-06-02T13:39:38.3800194Z  + google-cloud-storage==2.19.0
+2025-06-02T13:39:38.3800603Z  + google-cloud-texttospeech==2.25.0
+2025-06-02T13:39:38.3801020Z  + google-crc32c==1.6.0
+2025-06-02T13:39:38.3801375Z  + google-generativeai==0.8.4
+2025-06-02T13:39:38.3801764Z  + google-resumable-media==2.7.2
+2025-06-02T13:39:38.3802190Z  + googleapis-common-protos==1.69.1
+2025-06-02T13:39:38.3802607Z  + greenlet==3.1.1
+2025-06-02T13:39:38.3802919Z  + groq==0.18.0
+2025-06-02T13:39:38.3803262Z  + grpc-google-iam-v1==0.14.1
+2025-06-02T13:39:38.3803623Z  + grpcio==1.71.0
+2025-06-02T13:39:38.3803944Z  + grpcio-status==1.71.0
+2025-06-02T13:39:38.3804275Z  + h11==0.14.0
+2025-06-02T13:39:38.3804572Z  + httpcore==1.0.7
+2025-06-02T13:39:38.3804878Z  + httplib2==0.22.0
+2025-06-02T13:39:38.3805453Z  + httpx==0.27.2
+2025-06-02T13:39:38.3805802Z  + httpx-sse==0.4.0
+2025-06-02T13:39:38.3806253Z  + huggingface-hub==0.29.3
+2025-06-02T13:39:38.3806613Z  + humanize==4.12.1
+2025-06-02T13:39:38.3806914Z  + identify==2.6.9
+2025-06-02T13:39:38.3807236Z  + idna==3.10
+2025-06-02T13:39:38.3807513Z  + imagesize==1.4.1
+2025-06-02T13:39:38.3807861Z  + importlib-metadata==8.6.1
+2025-06-02T13:39:38.3808252Z  + iniconfig==2.0.0
+2025-06-02T13:39:38.3808554Z  + jinja2==3.1.6
+2025-06-02T13:39:38.3808846Z  + jiter==0.9.0
+2025-06-02T13:39:38.3809144Z  + jsonpatch==1.33
+2025-06-02T13:39:38.3809467Z  + jsonpointer==3.0.0
+2025-06-02T13:39:38.3809796Z  + jsonschema==4.23.0
+2025-06-02T13:39:38.3810380Z  + jsonschema-specifications==2024.10.1
+2025-06-02T13:39:38.3810819Z  + jupyter-client==8.6.3
+2025-06-02T13:39:38.3811255Z  + jupyter-core==5.7.2
+2025-06-02T13:39:38.3811607Z  + jupyterlab-pygments==0.3.0
+2025-06-02T13:39:38.3811968Z  + langchain==0.3.20
+2025-06-02T13:39:38.3812283Z  + langchain-anthropic==0.3.9
+2025-06-02T13:39:38.3812676Z  + langchain-community==0.3.19
+2025-06-02T13:39:38.3814157Z  + langchain-core==0.3.43
+2025-06-02T13:39:38.3814543Z  + langchain-google-genai==2.0.10
+2025-06-02T13:39:38.3814946Z  + langchain-google-vertexai==2.0.10
+2025-06-02T13:39:38.3815364Z  + langchain-groq==0.2.5
+2025-06-02T13:39:38.3815692Z  + langchain-ollama==0.2.3
+2025-06-02T13:39:38.3816031Z  + langchain-openai==0.3.8
+2025-06-02T13:39:38.3816381Z  + langchain-text-splitters==0.3.6
+2025-06-02T13:39:38.3816870Z  + langdetect==1.0.9
+2025-06-02T13:39:38.3817237Z  + langgraph==0.3.6
+2025-06-02T13:39:38.3817631Z  + langgraph-checkpoint==2.0.18
+2025-06-02T13:39:38.3818102Z  + langgraph-checkpoint-sqlite==2.0.6
+2025-06-02T13:39:38.3818574Z  + langgraph-prebuilt==0.1.2
+2025-06-02T13:39:38.3818974Z  + langgraph-sdk==0.1.55
+2025-06-02T13:39:38.3819359Z  + langsmith==0.3.13
+2025-06-02T13:39:38.3819713Z  + levenshtein==0.26.1
+2025-06-02T13:39:38.3820345Z  + litellm==1.63.6
+2025-06-02T13:39:38.3820712Z  + loguru==0.7.3
+2025-06-02T13:39:38.3821008Z  + lxml==5.3.1
+2025-06-02T13:39:38.3821317Z  + markdown-it-py==3.0.0
+2025-06-02T13:39:38.3821686Z  + markupsafe==3.0.2
+2025-06-02T13:39:38.3822013Z  + marshmallow==3.26.1
+2025-06-02T13:39:38.3822331Z  + mdurl==0.1.2
+2025-06-02T13:39:38.3822644Z  + mistune==3.1.2
+2025-06-02T13:39:38.3822939Z  + msgpack==1.1.0
+2025-06-02T13:39:38.3823249Z  + multidict==6.1.0
+2025-06-02T13:39:38.3823566Z  + mypy-extensions==1.0.0
+2025-06-02T13:39:38.3823919Z  + narwhals==1.30.0
+2025-06-02T13:39:38.3824236Z  + nbclient==0.10.2
+2025-06-02T13:39:38.3824522Z  + nbconvert==7.16.6
+2025-06-02T13:39:38.3824856Z  + nbformat==5.10.4
+2025-06-02T13:39:38.3825164Z  + nbsphinx==0.9.7
+2025-06-02T13:39:38.3825470Z  + nest-asyncio==1.6.0
+2025-06-02T13:39:38.3825799Z  + nodeenv==1.9.1
+2025-06-02T13:39:38.3826084Z  + numpy==1.26.4
+2025-06-02T13:39:38.3826371Z  + ollama==0.4.7
+2025-06-02T13:39:38.3826911Z  + open-notebook==0.1.2 (from file:///home/runner/work/open-notebook/open-notebook)
+2025-06-02T13:39:38.3827517Z  + openai==1.66.2
+2025-06-02T13:39:38.3827852Z  + openpyxl==3.1.5
+2025-06-02T13:39:38.3828145Z  + orjson==3.10.15
+2025-06-02T13:39:38.3828442Z  + packaging==24.2
+2025-06-02T13:39:38.3828741Z  + pandas==2.2.3
+2025-06-02T13:39:38.3829042Z  + pandoc==2.4
+2025-06-02T13:39:38.3829621Z  + pandocfilters==1.5.1
+2025-06-02T13:39:38.3829957Z  + pillow==11.1.0
+2025-06-02T13:39:38.3830400Z  + platformdirs==4.3.6
+2025-06-02T13:39:38.3830743Z  + pluggy==1.5.0
+2025-06-02T13:39:38.3831035Z  + plumbum==1.9.0
+2025-06-02T13:39:38.3831319Z  + ply==3.11
+2025-06-02T13:39:38.3831611Z  + podcastfy==0.4.1
+2025-06-02T13:39:38.3831918Z  + pre-commit==4.1.0
+2025-06-02T13:39:38.3832247Z  + propcache==0.3.0
+2025-06-02T13:39:38.3832559Z  + proto-plus==1.26.1
+2025-06-02T13:39:38.3832892Z  + protobuf==5.29.3
+2025-06-02T13:39:38.3833198Z  + pyarrow==19.0.1
+2025-06-02T13:39:38.3833507Z  + pyasn1==0.6.1
+2025-06-02T13:39:38.3833826Z  + pyasn1-modules==0.4.1
+2025-06-02T13:39:38.3834172Z  + pydantic==2.9.2
+2025-06-02T13:39:38.3834494Z  + pydantic-core==2.23.4
+2025-06-02T13:39:38.3835080Z  + pydantic-settings==2.8.1
+2025-06-02T13:39:38.3835441Z  + pydeck==0.9.1
+2025-06-02T13:39:38.3835728Z  + pydub==0.25.1
+2025-06-02T13:39:38.3836023Z  + pygments==2.19.1
+2025-06-02T13:39:38.3836327Z  + pymupdf==1.24.11
+2025-06-02T13:39:38.3836652Z  + pyparsing==3.2.1
+2025-06-02T13:39:38.3836951Z  + pytest==8.3.5
+2025-06-02T13:39:38.3837271Z  + pytest-xdist==3.6.1
+2025-06-02T13:39:38.3837623Z  + python-dateutil==2.9.0.post0
+2025-06-02T13:39:38.3838017Z  + python-docx==1.1.2
+2025-06-02T13:39:38.3838358Z  + python-dotenv==1.0.1
+2025-06-02T13:39:38.3838693Z  + python-levenshtein==0.26.1
+2025-06-02T13:39:38.3839094Z  + python-magic==0.4.27
+2025-06-02T13:39:38.3839435Z  + python-pptx==1.0.2
+2025-06-02T13:39:38.3839768Z  + pytz==2024.2
+2025-06-02T13:39:38.3840220Z  + pyyaml==6.0.2
+2025-06-02T13:39:38.3840537Z  + pyzmq==26.2.1
+2025-06-02T13:39:38.3840842Z  + rapidfuzz==3.12.2
+2025-06-02T13:39:38.3841170Z  + referencing==0.36.2
+2025-06-02T13:39:38.3841494Z  + regex==2024.11.6
+2025-06-02T13:39:38.3841790Z  + requests==2.32.3
+2025-06-02T13:39:38.3842124Z  + requests-toolbelt==1.0.0
+2025-06-02T13:39:38.3842468Z  + rich==13.9.4
+2025-06-02T13:39:38.3842768Z  + rpds-py==0.23.1
+2025-06-02T13:39:38.3843058Z  + rsa==4.9
+2025-06-02T13:39:38.3843775Z  + sdblpy==0.3.0 (from git+https://github.com/lfnovo/surreal-lite-py@30c250ade7ae9a8dca17f8114a1a05a4c6ce19e1)
+2025-06-02T13:39:38.3844625Z  + setuptools==75.9.1
+2025-06-02T13:39:38.3844948Z  + shapely==2.0.7
+2025-06-02T13:39:38.3845274Z  + shellingham==1.5.4
+2025-06-02T13:39:38.3845581Z  + six==1.17.0
+2025-06-02T13:39:38.3845864Z  + smmap==5.0.2
+2025-06-02T13:39:38.3847720Z  + sniffio==1.3.1
+2025-06-02T13:39:38.3848056Z  + snowballstemmer==2.2.0
+2025-06-02T13:39:38.3848387Z  + socksio==1.0.0
+2025-06-02T13:39:38.3848663Z  + soupsieve==2.6
+2025-06-02T13:39:38.3848943Z  + sphinx==8.1.3
+2025-06-02T13:39:38.3849254Z  + sphinx-autodoc-typehints==2.5.0
+2025-06-02T13:39:38.3849651Z  + sphinx-rtd-theme==3.0.2
+2025-06-02T13:39:38.3850177Z  + sphinxcontrib-applehelp==2.0.0
+2025-06-02T13:39:38.3850594Z  + sphinxcontrib-devhelp==2.0.0
+2025-06-02T13:39:38.3850980Z  + sphinxcontrib-htmlhelp==2.1.0
+2025-06-02T13:39:38.3851389Z  + sphinxcontrib-jquery==4.1
+2025-06-02T13:39:38.3851876Z  + sphinxcontrib-jsmath==1.0.1
+2025-06-02T13:39:38.3852315Z  + sphinxcontrib-qthelp==2.0.0
+2025-06-02T13:39:38.3852720Z  + sphinxcontrib-serializinghtml==2.0.0
+2025-06-02T13:39:38.3853125Z  + sqlalchemy==2.0.39
+2025-06-02T13:39:38.3853423Z  + streamlit==1.43.2
+2025-06-02T13:39:38.3853737Z  + streamlit-monaco==0.1.3
+2025-06-02T13:39:38.3854098Z  + streamlit-scrollable-textbox==0.0.3
+2025-06-02T13:39:38.3854511Z  + streamlit-tags==1.2.8
+2025-06-02T13:39:38.3854854Z  + tenacity==9.0.0
+2025-06-02T13:39:38.3855134Z  + tiktoken==0.9.0
+2025-06-02T13:39:38.3855410Z  + tinycss2==1.4.0
+2025-06-02T13:39:38.3855703Z  + tokenizers==0.21.0
+2025-06-02T13:39:38.3856000Z  + toml==0.10.2
+2025-06-02T13:39:38.3856268Z  + tomli==2.2.1
+2025-06-02T13:39:38.3856532Z  + tornado==6.4.2
+2025-06-02T13:39:38.3856807Z  + tqdm==4.67.1
+2025-06-02T13:39:38.3857076Z  + traitlets==5.14.3
+2025-06-02T13:39:38.3857368Z  + typer==0.12.5
+2025-06-02T13:39:38.3857664Z  + types-pyyaml==6.0.12.20241230
+2025-06-02T13:39:38.3858043Z  + typing-extensions==4.12.2
+2025-06-02T13:39:38.3858614Z  + typing-inspect==0.9.0
+2025-06-02T13:39:38.3858928Z  + tzdata==2025.1
+2025-06-02T13:39:38.3859217Z  + uritemplate==4.1.1
+2025-06-02T13:39:38.3859504Z  + urllib3==2.3.0
+2025-06-02T13:39:38.3859794Z  + virtualenv==20.29.3
+2025-06-02T13:39:38.3860228Z  + watchdog==6.0.0
+2025-06-02T13:39:38.3860523Z  + webencodings==0.5.1
+2025-06-02T13:39:38.3860778Z  + websockets==13.1
+2025-06-02T13:39:38.3861019Z  + wheel==0.44.0
+2025-06-02T13:39:38.3861253Z  + xlsxwriter==3.2.2
+2025-06-02T13:39:38.3861504Z  + yarl==1.18.3
+2025-06-02T13:39:38.3861777Z  + youtube-transcript-api==0.6.3
+2025-06-02T13:39:38.3862099Z  + zipp==3.21.0
+2025-06-02T13:39:38.3862346Z  + zstandard==0.23.0

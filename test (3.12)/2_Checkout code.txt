@@ -1,0 +1,83 @@
+﻿2025-06-02T13:39:31.8274491Z ##[group]Run actions/checkout@v4
+2025-06-02T13:39:31.8275317Z with:
+2025-06-02T13:39:31.8275732Z   repository: luckybbjason1/open-notebook
+2025-06-02T13:39:31.8276404Z   token: ***
+2025-06-02T13:39:31.8276773Z   ssh-strict: true
+2025-06-02T13:39:31.8277171Z   ssh-user: git
+2025-06-02T13:39:31.8277564Z   persist-credentials: true
+2025-06-02T13:39:31.8277994Z   clean: true
+2025-06-02T13:39:31.8278372Z   sparse-checkout-cone-mode: true
+2025-06-02T13:39:31.8278838Z   fetch-depth: 1
+2025-06-02T13:39:31.8279205Z   fetch-tags: false
+2025-06-02T13:39:31.8279581Z   show-progress: true
+2025-06-02T13:39:31.8279961Z   lfs: false
+2025-06-02T13:39:31.8280475Z   submodules: false
+2025-06-02T13:39:31.8280868Z   set-safe-directory: true
+2025-06-02T13:39:31.8281527Z ##[endgroup]
+2025-06-02T13:39:32.0045579Z Syncing repository: luckybbjason1/open-notebook
+2025-06-02T13:39:32.0047663Z ##[group]Getting Git version info
+2025-06-02T13:39:32.0048496Z Working directory is '/home/runner/work/open-notebook/open-notebook'
+2025-06-02T13:39:32.0049749Z [command]/usr/bin/git version
+2025-06-02T13:39:32.0067254Z git version 2.49.0
+2025-06-02T13:39:32.0096821Z ##[endgroup]
+2025-06-02T13:39:32.0112227Z Temporarily overriding HOME='/home/runner/work/_temp/794a6b2e-f83e-4e92-9333-d208c3e22186' before making global git config changes
+2025-06-02T13:39:32.0115379Z Adding repository directory to the temporary git global config as a safe directory
+2025-06-02T13:39:32.0118877Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/open-notebook/open-notebook
+2025-06-02T13:39:32.0153568Z Deleting the contents of '/home/runner/work/open-notebook/open-notebook'
+2025-06-02T13:39:32.0157225Z ##[group]Initializing the repository
+2025-06-02T13:39:32.0162816Z [command]/usr/bin/git init /home/runner/work/open-notebook/open-notebook
+2025-06-02T13:39:32.0232978Z hint: Using 'master' as the name for the initial branch. This default branch name
+2025-06-02T13:39:32.0234953Z hint: is subject to change. To configure the initial branch name to use in all
+2025-06-02T13:39:32.0236823Z hint: of your new repositories, which will suppress this warning, call:
+2025-06-02T13:39:32.0238125Z hint:
+2025-06-02T13:39:32.0238954Z hint: 	git config --global init.defaultBranch <name>
+2025-06-02T13:39:32.0239647Z hint:
+2025-06-02T13:39:32.0240612Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2025-06-02T13:39:32.0241613Z hint: 'development'. The just-created branch can be renamed via this command:
+2025-06-02T13:39:32.0242355Z hint:
+2025-06-02T13:39:32.0242819Z hint: 	git branch -m <name>
+2025-06-02T13:39:32.0243677Z Initialized empty Git repository in /home/runner/work/open-notebook/open-notebook/.git/
+2025-06-02T13:39:32.0251426Z [command]/usr/bin/git remote add origin https://github.com/luckybbjason1/open-notebook
+2025-06-02T13:39:32.0285915Z ##[endgroup]
+2025-06-02T13:39:32.0286846Z ##[group]Disabling automatic garbage collection
+2025-06-02T13:39:32.0289784Z [command]/usr/bin/git config --local gc.auto 0
+2025-06-02T13:39:32.0320409Z ##[endgroup]
+2025-06-02T13:39:32.0321657Z ##[group]Setting up auth
+2025-06-02T13:39:32.0327022Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-06-02T13:39:32.0358420Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-06-02T13:39:32.0645184Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-06-02T13:39:32.0678446Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-06-02T13:39:32.0912792Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2025-06-02T13:39:32.0948238Z ##[endgroup]
+2025-06-02T13:39:32.0949670Z ##[group]Fetching the repository
+2025-06-02T13:39:32.0958728Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +d162b9ba88cbe17add238ecd4ba41da549ab7fe4:refs/remotes/pull/1/merge
+2025-06-02T13:39:32.5221636Z From https://github.com/luckybbjason1/open-notebook
+2025-06-02T13:39:32.5224372Z  * [new ref]         d162b9ba88cbe17add238ecd4ba41da549ab7fe4 -> pull/1/merge
+2025-06-02T13:39:32.5247253Z ##[endgroup]
+2025-06-02T13:39:32.5250709Z ##[group]Determining the checkout info
+2025-06-02T13:39:32.5251887Z ##[endgroup]
+2025-06-02T13:39:32.5254559Z [command]/usr/bin/git sparse-checkout disable
+2025-06-02T13:39:32.5298353Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2025-06-02T13:39:32.5326725Z ##[group]Checking out the ref
+2025-06-02T13:39:32.5330699Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/1/merge
+2025-06-02T13:39:32.5476875Z Note: switching to 'refs/remotes/pull/1/merge'.
+2025-06-02T13:39:32.5478036Z 
+2025-06-02T13:39:32.5478690Z You are in 'detached HEAD' state. You can look around, make experimental
+2025-06-02T13:39:32.5480836Z changes and commit them, and you can discard any commits you make in this
+2025-06-02T13:39:32.5483388Z state without impacting any branches by switching back to a branch.
+2025-06-02T13:39:32.5485287Z 
+2025-06-02T13:39:32.5486249Z If you want to create a new branch to retain commits you create, you may
+2025-06-02T13:39:32.5488536Z do so (now or later) by using -c with the switch command. Example:
+2025-06-02T13:39:32.5490192Z 
+2025-06-02T13:39:32.5490768Z   git switch -c <new-branch-name>
+2025-06-02T13:39:32.5491709Z 
+2025-06-02T13:39:32.5492231Z Or undo this operation with:
+2025-06-02T13:39:32.5493062Z 
+2025-06-02T13:39:32.5493484Z   git switch -
+2025-06-02T13:39:32.5494108Z 
+2025-06-02T13:39:32.5495232Z Turn off this advice by setting config variable advice.detachedHead to false
+2025-06-02T13:39:32.5496589Z 
+2025-06-02T13:39:32.5497867Z HEAD is now at d162b9b Merge 7aff1416e4d0473aa20e1650226eabfa7a31bec8 into 01f2ae1f485dfb8c98ee5e1b35e47bbf0fe2c6ae
+2025-06-02T13:39:32.5502810Z ##[endgroup]
+2025-06-02T13:39:32.5524010Z [command]/usr/bin/git log -1 --format=%H
+2025-06-02T13:39:32.5545844Z d162b9ba88cbe17add238ecd4ba41da549ab7fe4
