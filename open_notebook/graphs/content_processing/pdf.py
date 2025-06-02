@@ -116,19 +116,6 @@ def clean_pdf_text(text):
 
 
 async def _extract_text_from_pdf(pdf_path):
-    doc = fitz.open(pdf_path)
-    try:
-        text = ""
-        logger.debug(f"Found {len(doc)} pages in PDF")
-        for page in doc:
-            text += page.get_text()
-        normalized_text = clean_pdf_text(text)
-        return normalized_text
-    finally:
-        doc.close()
-
-
-async def _extract_text_from_pdf(pdf_path):
     """Extract text from PDF asynchronously"""
 
     def _extract():
