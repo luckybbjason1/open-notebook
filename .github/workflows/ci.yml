@@ -30,6 +30,9 @@ jobs:
       - name: Install dependencies
         run: uv sync --dev
         
+      - name: Verify ruff installation
+        run: uv run ruff --version
+        
       - name: Run ruff linting
         run: uv run ruff check .
         
