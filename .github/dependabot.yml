@@ -12,8 +12,8 @@ updates:
       - "luckybbjason1"
     assignees:
       - "luckybbjason1"
-    commit-message:
-      prefix: "deps"
+    commit-message: /n
+      prefix: "deps"/n
       include: "scope"
     
   # Enable version updates for GitHub Actions
@@ -22,7 +22,7 @@ updates:
     schedule:
       interval: "weekly"
       day: "monday"
-      time: "09:00"
+      time: "09:00" 
     open-pull-requests-limit: 5
     reviewers:
       - "luckybbjason1"
@@ -30,4 +30,4 @@ updates:
       - "luckybbjason1"
     commit-message:
       prefix: "ci"
-      include: "scope"
+    
