@@ -10,4 +10,4 @@ class ContentState(TypedDict):
     identified_type: str
     identified_provider: str
     metadata: dict
-    delete_source: bool = False
+    delete_source: bool

@@ -290,9 +290,9 @@ async def get_xlsx_info(file_path):
 async def extract_office_content(state: ContentState):
     """Universal function to extract content from Office files"""
     assert state.get("file_path"), "No file path provided"
-    assert (
-        state.get("identified_type") in SUPPORTED_OFFICE_TYPES
-    ), "Unsupported File Type"
+    assert state.get("identified_type") in SUPPORTED_OFFICE_TYPES, (
+        "Unsupported File Type"
+    )
     file_path = state["file_path"]
     doc_type = state["identified_type"]
 

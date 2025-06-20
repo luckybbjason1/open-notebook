@@ -49,14 +49,16 @@ async def split_audio(input_file, segment_length_minutes=15, output_prefix=None)
             segment = audio[start_time:end_time]
 
             # Generate output filename
-            output_filename = f"{output_prefix}_{str(i+1).zfill(3)}.mp3"
+            output_filename = f"{output_prefix}_{str(i + 1).zfill(3)}.mp3"
             output_path = os.path.join(output_dir, output_filename)
 
             # Export segment
             segment.export(output_path, format="mp3")
             output_files.append(output_path)
 
-            logger.debug(f"Exported segment {i+1}/{total_segments}: {output_filename}")
+            logger.debug(
+                f"Exported segment {i + 1}/{total_segments}: {output_filename}"
+            )
 
         return output_files
 

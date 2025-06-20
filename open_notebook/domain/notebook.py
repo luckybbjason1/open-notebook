@@ -13,6 +13,7 @@ from open_notebook.exceptions import (
     DatabaseOperationError,
     InvalidInputError,
 )
+from open_notebook.models import EmbeddingModel
 from open_notebook.utils import split_text, surreal_clean
 
 
@@ -122,7 +123,7 @@ class SourceInsight(ObjectModel):
             logger.exception(e)
             raise DatabaseOperationError(e)
 
-    def save_as_note(self, notebook_id: str = None) -> Any:
+    def save_as_note(self, notebook_id: Optional[str] = None) -> Any:
         note = Note(
             title=f"{self.insight_type} from source {self.source.title}",
             content=self.content,
@@ -191,7 +192,10 @@ class Source(ObjectModel):
 
     def vectorize(self) -> None:
         logger.info(f"Starting vectorization for source {self.id}")
-        EMBEDDING_MODEL = model_manager.embedding_model
+        EMBEDDING_MODEL: Optional[EmbeddingModel] = model_manager.embedding_model
+        if not EMBEDDING_MODEL:
+            logger.error("No embedding model available")
+            return
 
         try:
             if not self.full_text:
@@ -252,7 +256,7 @@ class Source(ObjectModel):
             raise DatabaseOperationError(e)
 
     def add_insight(self, insight_type: str, content: str) -> Any:
-        EMBEDDING_MODEL = model_manager.embedding_model
+        EMBEDDING_MODEL: Optional[EmbeddingModel] = model_manager.embedding_model
         if not EMBEDDING_MODEL:
             logger.warning("No embedding model found. Insight will not be searchable.")
 
@@ -350,7 +354,9 @@ def vector_search(
     if not keyword:
         raise InvalidInputError("Search keyword cannot be empty")
     try:
-        EMBEDDING_MODEL = model_manager.embedding_model
+        EMBEDDING_MODEL: Optional[EmbeddingModel] = model_manager.embedding_model
+        if not EMBEDDING_MODEL:
+            raise InvalidInputError("No embedding model available for search")
         embed = EMBEDDING_MODEL.embed(keyword)
         results = repo_query(
             """

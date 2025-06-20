@@ -19,14 +19,17 @@ class TransformationState(TypedDict):
 
 
 def run_transformation(state: dict, config: RunnableConfig) -> dict:
-    source: Source = state.get("source")
+    source_data = state.get("source")
+    if source_data is None:
+        raise ValueError("No source provided")
+    source: Source = source_data
     content = state.get("input_text")
     assert source or content, "No content to transform"
     transformation: Transformation = state["transformation"]
     if not content:
         content = source.full_text
     transformation_prompt_text = transformation.prompt
-    default_prompts: DefaultPrompts = DefaultPrompts()
+    default_prompts: DefaultPrompts = DefaultPrompts(transformation_instructions="")
     if default_prompts.transformation_instructions:
         transformation_prompt_text = f"{default_prompts.transformation_instructions}\n\n{transformation_prompt_text}"
 

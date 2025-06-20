@@ -96,7 +96,7 @@ class Prompter:
         if self.parser:
             data["format_instructions"] = self.parser.get_format_instructions()
         assert self.template, "Prompter template is not defined"
-        assert isinstance(
-            self.template, Template
-        ), "Prompter template is not a Jinja2 Template"
+        assert isinstance(self.template, Template), (
+            "Prompter template is not a Jinja2 Template"
+        )
         return self.template.render(data)
