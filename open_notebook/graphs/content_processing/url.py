@@ -1,8 +1,9 @@
 import re
+from typing import List, Optional
 from urllib.parse import urlparse
 
 import aiohttp
-from bs4 import BeautifulSoup, Comment
+from bs4 import BeautifulSoup, Comment, Tag
 from loguru import logger
 
 from open_notebook.graphs.content_processing.state import ContentState
@@ -43,7 +44,10 @@ async def extract_url_bs4(url: str):
             html_content = url
         else:
             async with aiohttp.ClientSession() as session:
-                async with session.get(url, headers=headers, timeout=10) as response:
+                timeout = aiohttp.ClientTimeout(total=10)
+                async with session.get(
+                    url, headers=headers, timeout=timeout
+                ) as response:
                     response.raise_for_status()
                     html_content = await response.text()
 
@@ -69,11 +73,13 @@ async def extract_url_bs4(url: str):
         ]
 
         for tag in title_tags:
-            if tag:
+            if tag and isinstance(tag, Tag):
                 if tag.string:
-                    title = tag.string
-                elif tag.get("content"):
-                    title = tag.get("content")
+                    title = str(tag.string)
+                else:
+                    tag_content = tag.get("content")
+                    if tag_content and isinstance(tag_content, str):
+                        title = tag_content
                 break
 
         # Clean up title
@@ -83,10 +89,10 @@ async def extract_url_bs4(url: str):
             title = re.sub(r"\s*-.*$", "", title)
 
         # Get content
-        content = []
+        content: List[str] = []
 
         # Look for main article content
-        main_content = None
+        main_content: Optional[Tag] = None
         content_tags = [
             soup.find("article"),
             soup.find("main"),
@@ -95,19 +101,25 @@ async def extract_url_bs4(url: str):
         ]
 
         for tag in content_tags:
-            if tag:
+            if tag and isinstance(tag, Tag):
                 main_content = tag
                 break
 
         if not main_content:
-            main_content = soup
+            main_content = soup.body if soup.body else soup
 
         # Process content
         for element in main_content.find_all(
             ["p", "h1", "h2", "h3", "h4", "h5", "h6", "pre", "div"]
         ):
+            if not isinstance(element, Tag):
+                continue
             # Handle code blocks
-            if element.name == "pre" or "highlight" in element.get("class", []):
+            element_classes = element.get("class")
+            has_highlight = (
+                isinstance(element_classes, list) and "highlight" in element_classes
+            )
+            if element.name == "pre" or has_highlight:
                 code_text = element.get_text().strip()
                 if code_text:
                     content.append("\n```\n" + code_text + "\n```\n")

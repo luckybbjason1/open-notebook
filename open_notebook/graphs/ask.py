@@ -18,15 +18,16 @@ from open_notebook.prompter import Prompter
 class SubGraphState(TypedDict):
     question: str
     term: str
-    # type: Literal["text", "vector"]
+    search_type: str
     instructions: str
     results: dict
     answer: str
+    ids: list
 
 
 class Search(BaseModel):
     term: str
-    # type: Literal["text", "vector"] = Field(
+    # search_type: Literal["text", "vector"] = Field(
     #     description="The type of search. Use 'text' for keyword search and 'vector' for semantic search. If you are using text, search always for a single word"
     # )
     instructions: str = Field(

@@ -117,7 +117,7 @@ def surreal_clean(text) -> str:
     if colon_index != -1 and (
         first_space_index == -1 or colon_index < first_space_index
     ):
-        text = text.replace(":", "\:", 1)
+        text = text.replace(":", r"\:", 1)
 
     return text
 
